@@ -11,4 +11,8 @@ import requests
 class BaseApi:
 
     def request_send(self, method):
+        if method == "get":
+            requests.get()
+        elif method == "post":
+            requests.post()
         requests.Request(method=method)
