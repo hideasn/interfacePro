@@ -15,4 +15,8 @@ class BaseApi:
             requests.get()
         elif method == "post":
             requests.post()
+        elif method == "put":
+            requests.put()
+        else:
+            pass
         requests.Request(method=method)
